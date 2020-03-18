@@ -1,0 +1,39 @@
+<h2>My Heroes</h2>
+
+<!-- 
+ - *ngFor -> is Angular's repeater directive. It repeats the host element for each element in a list.
+
+ - [class.selected] = "hero === selectedHero" -> When the current row hero is the same as the selectedHero,
+                                                 Angular adds the "selected" CSS class. When the two 
+                                                 heroes are different, Angular removes the class.
+
+ - (click)="onSelect(hero) -> The parentheses around click tell Angular to listen for the <li> element's 
+                              click event. When the user clicks in the <li>, Angular executes the 
+                              onSelect(hero) expression.
+-->
+<!-- Comment for Routing section since the detail will be displayed in its own detail routed view -->
+<!-- 
+START commenting
+<ul class="heroes">    
+    <li *ngFor="let hero of heroes" 
+        [class.selected] = "hero === selectedHero"
+        (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
+</ul>
+-->
+<!-- [hero]="selectedHero" -> bind the HeroComponent with the HeroComponentDetail through the hero property -->
+<!--
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+END comment
+-->
+
+
+<!-- Hero component view for routing section -->
+<ul class="heroes">    
+    <li *ngFor="let hero of heroes" 
+        routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
+</ul>
+

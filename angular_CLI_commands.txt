@@ -1,0 +1,36 @@
+# Angular
+
+Install Node.js plataform wich contains npm (node package manager),
+this will help to install Angular-CLI
+
+Anglular CLI commands
+---------------------
+ng new <project-name>	-> Create a new angular project-name
+ng serve				-> To raise up the angular app in a web server port:4200
+ng lint					-> Check if all project files pass the standards of linting
+ng build				-> Build the project "dist" folder to makes easy de deployment in the web server
+ng test					-> Run the unit test for angulra application
+ng e2e					-> testing framework for test angular application code
+
+
+Components
+----------------------
+ng generate component <component_name>	-> Create a new component with corresponding files (.ts, .html, .css) and update app.module.ts to add the component
+
+
+Services
+----------------------
+ng generate service <component_name>	-> Create a new component with corresponding files (.ts, .html, .css) and update app.module.ts to add the component
+
+
+Concepts
+----------------------
+Interpolation	-> Ability to have available in the view the values modified by the TS component
+Event Binding	-> Event which component will action baed on view 
+Two way data binding using [(ngModell)] -> Ability to have available in the typescript component the values modified by the view
+
+
+
+Bootsrap style framework
+------------------------
+Search asunpkg bootstrap
