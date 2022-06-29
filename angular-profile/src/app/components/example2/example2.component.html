@@ -1,0 +1,27 @@
+<!-- Testing custom directive with @HostBinding and @HostListener -->
+<div class="container">
+  <h3>Directive + @ViewChild (Directive, DOM, Child Component)</h3>
+  <mat-divider></mat-divider>
+  <br>
+
+  <!-- Using @ViewChild with directives -->
+  <b>Using @ViewChild with directives</b><br/>
+  <p appShark class="mt-2">Swimming!</p>
+
+
+  <!-- Using @ViewChild with DOM Elements -->
+  <br/>
+  <b>Using @ViewChild with DOM Elements</b><br/>
+  <p #pRef1 class="mt-2"></p>
+  <input #inputRef placeholder="Your favorite wood creature">
+
+
+  <!-- Using @ViewChild with Child Components -->
+  <br/><br/><br/>
+  <b>Using @ViewChild with Child Components</b><br/>
+  <app-ex2-sub1></app-ex2-sub1>
+  <p #pRef2></p>
+
+</div>
+
+

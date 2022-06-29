@@ -1,0 +1,15 @@
+<!-- Testing custom directive with @HostBinding and @HostListener -->
+<div class="container">
+  <h3>Directive + @HostBinding and @HostListener</h3>
+  <mat-divider></mat-divider>
+
+  <br/>
+  <div borderDirective>product 1</div>
+
+  <div borderDirective bStyle='dotted'>product 2</div>
+
+  <div borderDirective bStyle='dotted' bRadius='4'>product 3</div>
+
+  <!-- fillout input parameter bRadius using property binding -->
+  <div borderDirective bStyle='dotted' [bRadius]='borderRadius'>product 4</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Use of @Input and @Output decorators</h3>
+  <mat-divider></mat-divider>
+  <br>
+
+<!-- child component with an input and output method -->
+<p><b>Parent Text: </b>{{ parentItem }} </p>
+
+<app-item-output [childInput]="parentItem" (childOutputEvent)="addItem($event)"></app-item-output>
+
+<br/><br/>
+<ul>
+  <li *ngFor="let item of items"> {{ item }} </li>
+</ul>
+
+</div>

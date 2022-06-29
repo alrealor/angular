@@ -1,0 +1,5 @@
+<br/>
+<p for="item-input">Add an item</p>
+<input type="text" #newItem>
+<!-- pass the value of #newInput -->
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
